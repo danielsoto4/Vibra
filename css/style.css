@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh; 
+    position: relative; 
+    font-family: 'Poppins', sans-serif; 
+}
+
+.container {
+    display: flex; 
+    width: 100%; 
+    position: relative; 
+}
+
+.left {
+    background-color: #e04f1a ; 
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    padding: 20px; 
+}
+
+.right {
+    background-color: #0af0f0 ; 
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    position: absolute; 
+    top: 55%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 5; 
+}
+
+img {
+    width: 850px; 
+    height: auto; 
+}
+
+.title {
+    position: absolute; 
+    top: 20px; 
+    left: 40px; 
+    color: #ffffff; 
+    z-index: 10; 
+}
+
+.navbar {
+    position: absolute; 
+    top: 20px; 
+    right: 180px; 
+    z-index: 10; 
+}
+
+.navbar ul {
+    list-style: none; 
+    display: flex; 
+}
+
+.navbar ul li {
+    margin-left: 30px; 
+}
+
+.navbar ul li a {
+    text-decoration: none; 
+    color: #6b8582;
+    font-size: 25px;
+}
+
+.left-text {
+    position: absolute; 
+    top: 20%; 
+    left: 20%; 
+    color: #ffffff; 
+    font-size: 150px; 
+    max-width: 200px; 
+    font-weight: 600;
+    line-height: 1.2; 
+}
+
+.right-text {
+    color: #000000;
+    font-size: 30px; 
+    margin-left: 20%; 
+    max-width: 400px; 
+}
+
+.play {
+    width: 70px; 
+    height: auto; 
+    margin-left: 2%; 
+}
+
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-img-delay {
+    animation: heartbeat 1.2s ease-in-out infinite;
+    animation-delay: 1.8s; 
+}
+
+.pulse-img {
+    animation: heartbeat 1.2s ease-in-out infinite;
+    animation-delay: 0s; 
+}
